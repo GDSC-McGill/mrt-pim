@@ -70,6 +70,8 @@ One of the following:
 #### Application credentials
 This application will use email based authentication. You can generate google credentials for development:
 
+>Make sure you have 2 factor authentication enabled
+
 - Step 1: Navigate to your google account ([https://myaccount.google.com/](https://myaccount.google.com/))
 - Step 2: Click on security
 - Step 3: Click on 2 step verification
