@@ -16,7 +16,7 @@ assignees: ''
 # Relevant research
 ...
 
-# Document and images
+# Documents and images
 ...
 
 # Dependant issues

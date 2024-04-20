@@ -13,10 +13,10 @@ assignees: ''
 # Steps to reproduce
 ...
 
-Expected behaviour
+# Expected behaviour
 ...
 
-# Images and documents
+# Documents and images
 ...
 
 # Relevant research
