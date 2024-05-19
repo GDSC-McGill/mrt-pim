@@ -1,3 +1,4 @@
+"use server";
 import { User } from "@prisma/client";
 import { findUserByEmail, findUserById, findAllUsers, deleteUserById} from "@/services/userService";
 
