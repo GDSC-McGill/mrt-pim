@@ -33,3 +33,32 @@ export async function deleteUserById(id: string): Promise<User | null> {
         }
     });
 }
+
+export async function createUser(email: string, name: string, emailVerified: DateTime, image: string, role: Role[]): Promise<User | null> {
+    const user = await prisma.user.create({
+        data: {
+            name: name,
+            email: email,
+            emailVerified: emailVerified,
+            image: image,
+            role: role,
+        }
+    });
+    return user;
+}
+
+export async function updateUserById(id: string, name?: string, email?: string, emailVerified?: DateTime, image?: string, role?: Role[], sessions?: Session[]): Promise<User | null> {
+    const user = await prisma.user.update({
+        where: {
+            id : id
+        },
+        data: {
+            name: name,
+            email: email,
+            emailVerified: emailVerified,
+            image: image,
+            role: role,
+        }
+    });
+    return user;
+}
